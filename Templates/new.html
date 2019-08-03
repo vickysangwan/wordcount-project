@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FIRST BACKEND PROJECT</title>
+</head>
+<body>
+	<h1>WELCOME TO MY WORLD</h1>
+<form action="{% url 'count' %}">
+	<textarea name="fulltext" cols="40" rows="5">	
+	</textarea>
+	<br>
+	<input type="submit" value="Count!" name="Count!"></input>
+	<a href="{% url 'about' %}">ABOUT US</a>
+</form>
+</body>
+</html>

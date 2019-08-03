@@ -1,0 +1,12 @@
+<h1>There are {{count}} number of words in this website</h1>
+<a href="{% url 'new' %}">GO BACK!</a>
+<h2>Your Text:</h2>
+
+{{ fulltext }}
+
+
+<h1>WORD COUNTS:</h1>
+{% for word,counttotal in sortedwords %}
+<br>
+{{ word }} - {{ counttotal }}
+{% endfor %}
